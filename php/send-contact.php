@@ -5,7 +5,7 @@
 // You can use entered name variable as $_POST['contact_name'], e-mail variable as $_POST['contact_email'], message variable as $_POST['contact_message']
 
 // Please insert here your email address: PUT_YOUR_EMAIL_ADDRESS_HERE
-$to      = 'PUT_YOUR_EMAIL_ADDRESS_HERE';
+$to      = 'expanse.exp@gmail.com';
 
 $subject = 'Message from '.$_POST['contact_name'];
 $message = $_POST['contact_message'];
