@@ -1,13 +1,12 @@
-import "owned"
+import "owned";
 
 contract Founders{
 	
 	address owner;
-	int interval = 43800; //payment interval a months worth of blocks
-	uint lastPayed; //block number of last payed
+	uint interval = 43800; //payment interval a months worth of blocks
 	uint divisor = 100; //gives us 1%
+	uint lastPayed;
 	uint pay;
-	uint multiplier;
 	
 	struct Founder{
 		address owner;
@@ -18,9 +17,9 @@ contract Founders{
 	function Founders(){
 		//set the addresses for the founders
 		owner = msg.sender;
-		founders["chris"].owner = "0x5f39e77fa3413c067c67f42e59abd31bf77fa6b8";
-		founders["dan"].owner = "0x123";	
-		founders["james"].owner = "0x456";
+		founders["chris"].owner = 0x5f39e77fa3413c067c67f42e59abd31bf77fa6b8;
+		founders["dan"].owner = 0x123;	
+		founders["james"].owner = 0x456;
 		
 		//prime the lastPayed variable
 		
@@ -29,14 +28,13 @@ contract Founders{
 	
 	modifier onlyrecordowner(bytes32 _name) { if (founders[_name].owner == msg.sender) _ }
 	
-	function pay(){
+	function payFounders(){
 		if((block.number - lastPayed ) >= interval && this.balance > 0){
 			//calculate pay per person and any missed pay
 			//multiplier = (block.number - lastPayed)/interval;
 			//pay = ((this.balance/divisor) * multiplier)/3;
 			
 			//calculate pay for 1 period and dont include missed pays
-			multiplier = (block.number - lastPayed)/interval;
 			pay = (this.balance/divisor)/3;
 			
 			//send the coin
@@ -60,10 +58,10 @@ contract Founders{
 		}
 	}
 	
-	function acct(address _name) constant returns(bytes32){ return founders[_name].owner;}
+	function acct(bytes32 _name) constant returns(address){ return founders[_name].owner;}
 	function lastPayAmount() constant returns (uint){ return pay; }
 	function nextPayAmount() constant returns (uint){ return (this.balance/divisor)/3; }
-	function lastPayed() constant returns (uint){return lastPayed;}
-	function nextPayed() constant returns (uint){return lastPayed+interval;}
+	function lastPayedBlock() constant returns (uint){return lastPayed;}
+	function nextPayedBlock() constant returns (uint){return lastPayed+interval;}
 	
 }
