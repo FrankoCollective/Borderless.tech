@@ -14,6 +14,7 @@ contract Citizenship{
         bytes32 eye_color;
         uint height;
         bool sex;
+		uint birthday;
         
     }
     
@@ -25,7 +26,7 @@ contract Citizenship{
         owner = msg.sender;
     }
     
-    function register(bytes32 fname, bytes32 lname, string picture, bytes32 eye_color, uint height, bool sex){
+    function register(bytes32 fname, bytes32 lname, string picture, bytes32 eye_color, uint height, bool sex, uint birthday){
         if(citizens[msg.sender].account == 0){
             //if the user doesnt exist save them
 			citizens[msg.sender].account	= msg.sender;
@@ -35,6 +36,7 @@ contract Citizenship{
             citizens[msg.sender].eye_color  = eye_color;
             citizens[msg.sender].height     = height;
             citizens[msg.sender].sex        = sex;
+			citizens[msg.sender].birthday	= birthday;
             loggit("registered");
         }else{
             //else update them
@@ -72,6 +74,11 @@ contract Citizenship{
         citizens[msg.sender].sex = sex;
         loggit("updated sex");
     }
+	
+	function setBirthday(uint birthday){
+        citizens[msg.sender].birthday = birthday;
+        loggit("updated birthday");
+    }
     
     function loggit(bytes32 complaint){
 		Loggit(msg.sender, complaint);
@@ -85,5 +92,5 @@ contract Citizenship{
     function height(address _account) constant returns(uint){ return citizens[_account].height;}
     //returns 0 for female, 1 for male. appropriately.
     function sex(address _account) constant returns(bool){ return citizens[_account].sex;}
- 
+	function birthday(address _account) constant returns(bool){ return citizens[_account].birthday;}
 }
