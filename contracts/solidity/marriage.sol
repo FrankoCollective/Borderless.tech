@@ -159,5 +159,11 @@ contract Marriage{
           return m_records[m_mIds[_a].index].timestamp;
         }
 	}
+	
+	function kill(){
+		if(owner == msg.sender){
+			selfdestruct(msg.sender);
+		}
+	}
 
 }
