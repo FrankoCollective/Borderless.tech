@@ -1,6 +1,6 @@
 import "owned";
 
-contract Citizenship{
+contract Citizenship {
     
     address owner;
     event Loggit(address indexed userAddress, bytes32 indexed complaint);
@@ -24,6 +24,11 @@ contract Citizenship{
     function Citizenship(){
         //set owner
         owner = msg.sender;
+    }
+	
+	function empty(){
+     uint256 balance = address(this).balance;
+     address(owner).send(balance);
     }
     
     function register(bytes32 fname, bytes32 lname, string picture, bytes32 eye_color, uint height, bool sex, uint birthday){
@@ -83,6 +88,11 @@ contract Citizenship{
     function loggit(bytes32 complaint){
 		Loggit(msg.sender, complaint);
 	}
+	
+	function empty(){
+     uint256 balance = address(this).balance;
+     address(owner).send(balance);
+    }
     
     
     function fname(address _account) constant returns(bytes32){ return citizens[_account].fname;}
@@ -92,5 +102,5 @@ contract Citizenship{
     function height(address _account) constant returns(uint){ return citizens[_account].height;}
     //returns 0 for female, 1 for male. appropriately.
     function sex(address _account) constant returns(bool){ return citizens[_account].sex;}
-	function birthday(address _account) constant returns(bool){ return citizens[_account].birthday;}
+	function birthday(address _account) constant returns(uint){ return citizens[_account].birthday;}
 }

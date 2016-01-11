@@ -2,7 +2,7 @@
 //TODO: Add Fee or marriage bond
 import "owned";
 
-contract Marriage{
+contract Marriage {
     address owner;
     uint public index = 0;
     event Loggit(address indexed userAddress, bytes32 indexed complaint);
@@ -31,6 +31,11 @@ contract Marriage{
     
     function Marriage(){
         owner = msg.sender;
+    }
+	
+	function empty(){
+     uint256 balance = address(this).balance;
+     address(owner).send(balance);
     }
     
     function register(address p2){

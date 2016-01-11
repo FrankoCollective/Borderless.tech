@@ -1,6 +1,6 @@
 import "owned";
 
-contract Founders{
+contract Founders {
 	
 	address owner;
 	uint interval = 43800; //payment interval a months worth of blocks
@@ -54,7 +54,7 @@ contract Founders{
 	//TODO: make the kill switch take a vote from all 3 founders
 	function kill(){
 		if(owner == msg.sender){
-			selfdestruct(msg.sender);
+			suicide(msg.sender);
 		}
 	}
 	
