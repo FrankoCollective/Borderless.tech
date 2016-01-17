@@ -167,7 +167,7 @@ contract Marriage {
 	
 	function kill(){
 		if(owner == msg.sender){
-			selfdestruct(msg.sender);
+			suicide(msg.sender);
 		}
 	}
 

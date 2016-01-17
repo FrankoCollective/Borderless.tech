@@ -19,7 +19,7 @@ contract Founders {
 		owner = msg.sender;
 		founders["chris"].owner = 0x5f39e77fa3413c067c67f42e59abd31bf77fa6b8;
 		founders["dan"].owner = 0x123;	
-		founders["james"].owner = 0x456;
+		founders["james"].owner = 0x2d5e5eb2e8903de7acd530ffce71e6677c96ec6e;
 		
 		//prime the lastPayed variable
 		

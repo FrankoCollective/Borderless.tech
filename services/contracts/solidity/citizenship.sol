@@ -3,104 +3,121 @@ import "owned";
 contract Citizenship {
     
     address owner;
-    event Loggit(address indexed userAddress, bytes32 indexed complaint);
-    
+	uint user_id = 0;
+
     struct Citizen{
-        
-        address account;
         bytes32 fname;
         bytes32 lname;
         string picture;
         bytes32 eye_color;
         uint height;
-        bool sex;
+        bytes32 sex;
 		uint birthday;
-        
+		address acct;
+		bool exist;
     }
-    
-    mapping(address => Citizen) citizens;
+	
+	struct cIndex{
+		bool exist;
+		uint index;
+	}
+	
+	mapping(address => cIndex) ids;
+    mapping(uint => Citizen) citizens;
 
-    //Constructor
     function Citizenship(){
         //set owner
         owner = msg.sender;
     }
 	
-	function empty(){
-     uint256 balance = address(this).balance;
-     address(owner).send(balance);
-    }
-    
-    function register(bytes32 fname, bytes32 lname, string picture, bytes32 eye_color, uint height, bool sex, uint birthday){
-        if(citizens[msg.sender].account == 0){
-            //if the user doesnt exist save them
-			citizens[msg.sender].account	= msg.sender;
-            citizens[msg.sender].fname      = fname;
-            citizens[msg.sender].lname      = lname;
-            citizens[msg.sender].picture    = picture;
-            citizens[msg.sender].eye_color  = eye_color;
-            citizens[msg.sender].height     = height;
-            citizens[msg.sender].sex        = sex;
-			citizens[msg.sender].birthday	= birthday;
-            loggit("registered");
-        }else{
-            //else update them
-            loggit("already registered");
-        }
+    function setUser(bytes32 fname, bytes32 lname, string picture, bytes32 eye_color, uint height, bytes32 sex, uint birthday){       
+            if(ids[msg.sender].exist == false){
+				user_id++;
+				
+				ids[msg.sender].index = user_id;
+				ids[msg.sender].exist = true;
+				citizens[user_id].exist = true;
+				citizens[user_id].acct = msg.sender;
+			}
+
+			setFname(fname);
+            setLname(lname);
+            setPicture(picture);
+            setEyeColor(eye_color);
+            setHeight(height);
+            setSex(sex);
+			setBirthday(birthday);			
     }
     
     
     function setFname(bytes32 fname){
-        citizens[msg.sender].fname = fname;
-        loggit("updated first name");
+        citizens[ids[msg.sender].index].fname = fname;
     }
     
     function setLname(bytes32 lname){
-        citizens[msg.sender].lname = lname;
-        loggit("updated last name");
+        citizens[ids[msg.sender].index].lname = lname;
     }
     
     function setPicture(string picture){
-        citizens[msg.sender].picture = picture;
-        loggit("updated picture");
+        citizens[ids[msg.sender].index].picture = picture;
     }
     
     function setEyeColor(bytes32 eye_color){
-        citizens[msg.sender].eye_color = eye_color;
-        loggit("updated eye color");
+        citizens[ids[msg.sender].index].eye_color = eye_color;
     }
     
     function setHeight(uint height){
-        citizens[msg.sender].height = height;
-        loggit("updated height");
+        citizens[ids[msg.sender].index].height = height;
     }
     
-    function setSex(bool sex){
-        citizens[msg.sender].sex = sex;
-        loggit("updated sex");
+    function setSex(bytes32 sex){
+        citizens[ids[msg.sender].index].sex = sex;
     }
 	
 	function setBirthday(uint birthday){
-        citizens[msg.sender].birthday = birthday;
-        loggit("updated birthday");
+        citizens[ids[msg.sender].index].birthday = birthday;   
     }
     
-    function loggit(bytes32 complaint){
-		Loggit(msg.sender, complaint);
+	function empty(){
+     uint256 balance = this.balance;
+     owner.send(balance);
+    }
+     
+    function fname(address _account) constant returns(bytes32){ return citizens[ids[_account].index].fname;}
+    function lname(address _account) constant returns(bytes32){ return citizens[ids[_account].index].lname;}
+    function picture(address _account) constant returns(string){ return citizens[ids[_account].index].picture;}
+    function eye_color(address _account) constant returns(bytes32){ return citizens[ids[_account].index].eye_color;}
+    function height(address _account) constant returns(uint){ return citizens[ids[_account].index].height;}
+    function sex(address _account) constant returns(bytes32){ return citizens[ids[_account].index].sex;}
+	function birthday(address _account) constant returns(uint){ return citizens[ids[_account].index].birthday;}
+	
+	function getUserById(uint index) constant returns(bytes32 fname, bytes32 lname, string picture, bytes32 eye_color, uint height, bytes32 sex, uint birthday, address acct){
+			if(citizens[index].exist == true){
+			fname = citizens[index].fname;
+			lname = citizens[index].lname;
+			picture = citizens[index].picture
+			eye_color = citizens[index].eye_color;
+			height = citizens[index].height;
+			sex = citizens[index].sex;
+			birthday = citizens[index].birthday;
+			acct = citizens[index].acct;
+			}else{
+			return;
+			}
 	}
 	
-	function empty(){
-     uint256 balance = address(this).balance;
-     address(owner).send(balance);
-    }
-    
-    
-    function fname(address _account) constant returns(bytes32){ return citizens[_account].fname;}
-    function lname(address _account) constant returns(bytes32){ return citizens[_account].lname;}
-    function picture(address _account) constant returns(string){ return citizens[_account].picture;}
-    function eye_color(address _account) constant returns(bytes32){ return citizens[_account].eye_color;}
-    function height(address _account) constant returns(uint){ return citizens[_account].height;}
-    //returns 0 for female, 1 for male. appropriately.
-    function sex(address _account) constant returns(bool){ return citizens[_account].sex;}
-	function birthday(address _account) constant returns(uint){ return citizens[_account].birthday;}
-}
+	function getUserByAcct(address _acct) constant returns(bytes32 fname, bytes32 lname, string picture, bytes32 eye_color, uint height, bytes32 sex, uint birthday, address acct){
+			if(citizens[ids[_acct].index].exist == true){
+			fname = citizens[ids[_acct].index].fname;
+			lname = citizens[ids[_acct].index].lname;
+			picture = citizens[ids[_acct].index].picture
+			eye_color = citizens[ids[_acct].index].eye_color;
+			height = citizens[ids[_acct].index].height;
+			sex = citizens[ids[_acct].index].sex;
+			birthday = citizens[ids[_acct].index].birthday;
+			acct = citizens[ids[_acct].index].acct;
+			}else{
+			return;
+			}
+	}
+}        
