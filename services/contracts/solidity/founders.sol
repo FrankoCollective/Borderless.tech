@@ -4,12 +4,13 @@ contract Founders {
 	
 	address owner;
 	uint interval = 43800; //payment interval a months worth of blocks
-	uint divisor = 100; //gives us 1%
+	uint divisor = 100; //pays out 1%
 	uint lastPayed;
 	uint pay;
 	
 	struct Founder{
 		address owner;
+		vote voteKill;
 	}
 	
 	mapping(bytes32 => Founder) founders;
@@ -51,10 +52,13 @@ contract Founders {
 		founders[_name].owner = _newOwner;
 	}
 	
-	//TODO: make the kill switch take a vote from all 3 founders
-	function kill(){
-		if(owner == msg.sender){
-			suicide(msg.sender);
+	function voteKill(bytes32 _name, bool vote) onlyrecordowner(_name){
+		founders[_name].voteKill = vote;
+	}
+	
+	function kill(bytes32 _name) onlyrecordowner(_name){
+		if(founders["chris"].vote == true && founders["dan"].vote == true && founders["james"].vote == true){
+			suicide(owner);
 		}
 	}
 	
