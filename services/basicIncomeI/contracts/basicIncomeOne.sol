@@ -54,6 +54,7 @@ contract BasicIncomeLucrii {
 	
 	modifier onlyadmin() { if (byR[byI[msg.sender].index].roles["admin"].exist == true) _ }
 	modifier onlyofficer() { if (byR[byI[msg.sender].index].roles["admin"].exist == true || byR[byI[msg.sender].index].roles["officer"].exist == true) _ }
+	modifier validated() { if (byR[byI[msg.sender].index].validated == true) _ }
 	
 	function register(){
 		if(byI[msg.sender].exist == false){
@@ -78,7 +79,7 @@ contract BasicIncomeLucrii {
 		}
 	}
 	
-	function mint(){
+	function mint() validated() {
 		if((block.number - byR[byI[msg.sender].index].lastMint ) >= interval){
 			//mint new coins
 			
@@ -114,4 +115,4 @@ contract BasicIncomeLucrii {
      uint256 balance = this.balance;
      owner.send(balance);
     }
-}          
+}              
