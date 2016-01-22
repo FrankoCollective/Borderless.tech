@@ -143,7 +143,7 @@ contract Marriage {
 	    //check who it is
         if(m_mIds[_a].exist == true){
             
-            if(m_records[m_mIds[_a].index].p1 == msg.sender){
+            if(m_records[m_mIds[_a].index].p1 == _a){
                 return m_records[m_mIds[_a].index].p2;
             }else if(m_records[m_mIds[_a].index].p2 == _a){
                 return m_records[m_mIds[_a].index].p1;
