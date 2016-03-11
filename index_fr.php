@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<!-- 
+	TODO: Resources Page. This will list media package, press release stuff and links to our papers.
+-->
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="keywords" content="borderless, borderless.tech, expanse, franko, Blockchain, governance">
+    <meta name="description" content="Borderless.tech is a coalition of globally accessible governance services forged out of smart contracts that live on the Expanse blockchain.">
+
+    <meta property="og:url" content="http://www.borderless.tech/" />
+    <meta property="og:description" content="Borderless.tech is a coalition of globally accessible governance services forged out of smart contracts that live on the Expanse blockchain." />
+    <meta property="og:title" content="Borderless.tech" />
+    <meta property="og:image" content="http://www.borderless.tech/img/android-icon-192x192.png" />
+    <title>Borderless Technology - Governance for a borderless society.</title>
+	
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="img/manifest.json">
+	
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+  <!-- PRELOADER -->
+  <div class="lj-preloader">
+    <img src="img/preloader.svg" class="progress" alt="">
+  </div>
+  <!-- /PRELOADER -->
+
+  <!-- HEADER -->
+  <header id="header">
+
+    <!-- HEADER OVERLAY --> 
+    <div class="lj-overlay lj-overlay-color"></div>
+    <!-- /HEADER OVERLAY -->
+
+    <!-- NAVIGATION -->
+    <nav>
+      <a href="#home" class="active"><i class="fa fa-bookmark"></i><span>Home</span></a>
+      <a href="#services"><i class="fa fa-diamond"></i><span>Services</span></a>
+      <a href="#team"><i class="fa fa-users"></i><span>Team</span></a>
+	  <a href="#resources"><i class="fa fa-star"></i><span>Resources</span></a>
+      <a href="#contact"><i class="fa fa-envelope"></i><span>Contact</span></a>
+	  <a href="https://medium.com/@Borderless"><i class="fa fa-medium"></i><span>Blog</span></a>
+    </nav>
+    <!-- /NAVIGATION -->
+    
+    <div class="container">
+
+      <div class="row">
+
+        <!-- SOCIALS -->
+        <div class="col-sm-6 col-sm-push-6 lj-socials">
+          <ul>
+            <li><a class="fa fa-facebook" href="#!"></a></li>
+            <li><a class="fa fa-twitter" href="https://twitter.com/borderless_tech"></a></li>
+            <li><a class="fa fa-google-plus" href="#!"></a></li>
+            <li><a class="fa fa-slack" href="http://slack.expanse.tech"></a></li>
+			<li><a class="fa fa-medium" href="https://medium.com/@Borderless"></a></li>
+          </ul>
+        </div>
+        <!-- /SOCIALS -->
+
+        <!-- LOGO -->
+        <div class="col-sm-6 col-sm-pull-6">
+           <img src="img/logo.png" data-retina-src="img/logo@2x.png" alt="">
+        </div>
+        <!-- /LOGO -->
+
+      </div>
+      
+      <!-- CHANGER -->
+      <div class="lj-changer">
+
+        <!-- PAGE #HOME -->
+        <div id="home" class="active">
+
+          <!-- TITLE -->
+          <div class="row">
+            <div class="col-xs-12 lj-title">
+              <div>We are 
+                <div class="rotate"><ul class="texts">
+                  <li>united</li>
+                  <li>determined</li>
+                  <li>free</li>
+				  <li>global</li>
+                  <li>Borderless</li>
+                </ul></div></div>
+            </div>
+          </div>
+          <!-- /TITLE -->
+
+          <!-- TEXT PARAGRAPH -->
+          <div class="row">
+            <div class="col-xs-12 lj-title-paragraph">
+              <p>Borderless.tech is a coalition of globally accessible governance services forged out of smart contracts that live on the <a href="http://www.expanse.tech">Expanse blockchain</a>.</p>
+			  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/YFzA7w7FScc" frameborder="0" allowfullscreen></iframe></p>
+            </div>
+          </div>
+          <!-- /TEXT PARAGRAPH -->
+
+        </div>
+        <!-- /PAGE #HOME -->
+
+        <!-- PAGE #FEATURES -->
+        <div id="services" class="subpage">
+          <div class="row">
+            <div class="col-sm-6">
+
+              <!-- TITLE -->
+              <h2>Services</h2>
+              <!-- /TITLE -->
+
+              <!-- TEXT PARAGRAPH -->
+              <p>Governance services for a borderless society.</p>
+              <!-- TEXT PARAGRAPH -->
+
+              <!-- FEATURES LIST -->
+              <ul>
+                <li>
+                  <span>Borderless Citizenship Id</span>
+                  <p>In a world unrestricted by imaginary lines, we would need a new type of identity. A borderless identity. This identity will serve as the foundation in which all of the other services are built from. </p>
+                </li>
+				<li>
+                  <span>Borderless Direct Democracy</span>
+                  <p>We are creating a <a href="#">3 divisioned direct democracy</a>, where every citizen has a say in the future of the organization. The more citizens participate the more influence and power that citizen has.</p>
+                </li>
+			  </ul>
+			  
+			  <p>Legal Services</p>
+			  <ul>
+				<li>
+					<span>Borderless Marriage</span>
+					<p>A marriage as defined by the marriage smart contract is a binding relationship between two or more identities.</p>
+				</li>
+				<li>
+					<span>Borderless Notary</span>
+					<p>Using cryptography we can sign your documents in such a way that proves they exist.</p>
+				</li>
+				<li>
+					<span>Borderless Property Registrar</span>
+					<p>We will provide multiple services to register the stuff you own on the blockchain. This will also make it easier to transact registered property.</p>
+				</li>
+				<li>
+					<span>Borderless Incorporation</span>
+					<p>Register your corporation and build its corporate bylaws in code.</p>
+				</li>
+			  </ul>
+			
+			<p>Economic Services.</p>
+			  <ul>
+				<li>
+                  <span>Borderless Basic Income</span>
+                  <p>The only way to guarantee a society is truly voluntary is to have ones basic needs met completely. All citizens should have access to Housing, Nutrition, Healthcare, Education and Protection from Aggression.</p>
+                </li>
+                <li>
+                  <span>Borderless Financial Services</span>
+                  <p>In order for a society to be borderless they need to be able to transact freely with out restriction. The Expanse platform is built to do exactly that.</p>
+                </li>
+				<li>
+                  <span>Borderless Reputation System</span>
+                  <p>A decentralized web of trust system is essential to a borderless society. In order for citizens to transact with confidence we can incentivize good behaviour and punish bad ones.</p>
+                </li>
+				<li>
+                  <span>Borderless Escrow</span>
+                  <p>In order to facilitate safe transactions between two parties we will offer an escrow services that are tied to the reputation system.</p>
+                </li>
+              </ul>
+			  
+			  <p>More</p>
+			  <ul>
+				<li>
+					<span>Misc Smart Contracts</span>
+					<p>Citizens will be able to create, deploy and share their own smart contracts with ease using intuitive tools and templates.</p>
+				</li>
+			  </ul>
+              <!-- /FEATURES LIST -->
+
+            </div>
+          </div>
+        </div>
+        <!-- /PAGE #FEATURES -->
+
+       
+        <!-- PAGE #TEAM -->
+        <div id="team" class="subpage">
+          <div class="row">
+            <div class="col-sm-12">
+
+              <!-- TITLE -->
+              <h2>Team</h2> 
+			  <p> <a href="http://slack.expanse.tech"><i class="fa fa-star"></i> Join our team</a></p>
+              <!-- /TITLE -->
+
+              <!-- TEXT PARAGRAPH -->
+              <p>In a jungle of concrete somewhere in America, raw men work hard doing one of the world’s most dangerous jobs – creating borderless governance services. This extremely arduous but satisfying effort is driven by passion and the will to help move our planet forward. Against all odds, brave men risk their lives to craft a beautiful future for everyone.</p>
+              <!-- /TEXT PARAGRAPH -->
+			  
+
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6">
+
+              <!-- TEAM MEMBER -->
+              <figure>
+                <img src="img/chrisfranko.png" alt="Christopher Franko">
+                <figcaption>Christopher Franko
+                  <span>developer</span>
+                  <div class="team-socials">
+                    <a href="http://www.github.com/chrisfranko"><i class="fa fa-github"></i></a>
+                    <a href="http://www.twitter.com/FrankoCurrency"><i class="fa fa-twitter"></i></a>
+                  </div>
+                </figcaption>
+				
+              </figure>
+              <!-- /TEAM MEMBER -->
+
+            </div>
+            <div class="col-sm-6">
+
+              <!-- TEAM MEMBER -->
+              <figure>
+                <img src="img/danconway.png" alt="Dan Conway">
+                <figcaption>Dan Conway
+                  <span>developer</span>
+                  <div class="team-socials">
+                    <a href="#!"><i class="fa fa-github"></i></a>
+                    <a href="#!"><i class="fa fa-codepen"></i></a>
+                  </div>
+                </figcaption>
+              </figure>
+              <!-- /TEAM MEMBER -->
+
+            </div>
+          </div>
+		  <!-- commented out new advisor section
+		  <div class="row">
+            <div class="col-sm-12">
+				<br>
+
+              <h2>Advisors</h2> 
+
+			
+            </div>
+			<div class="col-sm-3">
+
+    
+              <figure>
+                <img src="img/marcia.png" alt="Marcia Danzeisen">
+                <figcaption>Marcia Danzeisen 
+                  <span>developer</span>
+                  <div class="team-socials">
+                    <a href="#!"><i class="fa fa-github"></i></a>
+                    <a href="#!"><i class="fa fa-codepen"></i></a>
+                  </div>
+                </figcaption>
+              </figure>
+
+
+            </div>
+			
+			<div class="col-sm-3">
+
+    
+              <figure>
+                <img src="img/wonderful.png" alt="Wonderful Faison">
+                <figcaption>Wonderful Faison
+                  <span>developer</span>
+                  <div class="team-socials">
+                    <a href="#!"><i class="fa fa-github"></i></a>
+                    <a href="#!"><i class="fa fa-codepen"></i></a>
+                  </div>
+                </figcaption>
+              </figure>
+
+            </div>
+          </div>
+		  --->
+        </div>
+		
+        <!-- /PAGE #TEAM -->
+		
+		<!-- PAGE #resources -->
+        <div id="resources" class="subpage">
+          <div class="row">
+            <div class="col-sm-8 col-md-6">
+
+              <!-- TITLE -->
+              <h2>Resources</h2>
+              <!-- /TITLE -->
+
+              <!-- TEXT PARAGRAPH -->
+              <p>Research Papers</p>
+			  <ul>
+				<li><a href="https://docs.google.com/document/d/1ITNRmZ0dTse-aZqjbWiC9w1n2XpPvKyl4J9BP-liuxw/edit?usp=sharing">Ternary Division DAO</a></li>
+				<li><a href="https://docs.google.com/document/d/1cbuqW5Tl6URMRU48hLNCvPhAU52ceqU0n7kRoft6Vic/edit?usp=sharing">EXP.life</a></li>
+			  </ul>
+              <!-- /TEXT PARAGRAPH -->
+
+              
+
+            </div>
+          </div>
+        </div>
+        <!-- /PAGE #resources -->
+		
+        <!-- PAGE #CONTACT -->
+        <div id="contact" class="subpage">
+          <div class="row">
+            <div class="col-sm-8 col-md-6">
+
+              <!-- TITLE -->
+              <h2>Contact</h2>
+              <!-- /TITLE -->
+
+              <!-- TEXT PARAGRAPH -->
+              <p>Don’t hesitate to ask, we are here to help you!</p>
+              <!-- /TEXT PARAGRAPH -->
+
+              <!-- CONTACT FORM -->
+              <form autocomplete="off">
+                <label for="contact-name">Name<span class="verification"></span></label>
+                <input type="text" value="" name="contact-name" id="contact-name">
+                <label for="contact-email">Email<span class="verification"></span></label>
+                <input type="text" value="" name="contact-email" id="contact-email">
+                <label for="contact-message">Message<span class="verification"></span></label>
+                <textarea name="contact-message" id="contact-message"></textarea>
+                <button type="submit" name="contact-submit">Submit</button>
+                <span class="contact-message">Submit successful, thanks!</span>
+              </form>
+              <!-- /CONTACT FORM -->
+
+            </div>
+          </div>
+        </div>
+        <!-- /PAGE #CONTACT -->
+
+      </div>
+      <!-- /CHANGER -->
+
+    </div>
+
+    <!-- BACKGROUND -->
+    <div class="lj-background"></div>
+    <!-- /BACKGROUND -->
+  
+  </header>
+  <!-- /HEADER -->
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container">
+      <div class="row">
+
+        <!-- PROGRESS -->
+        <div class="col-sm-6 lj-progress">
+          <span class="hidden-xs">Progress:<em>51%</em></span>
+          <div class="lj-progress-bar">
+            <div class="filler" style="width: 51%"></div>
+          </div>
+        </div>
+        <!-- /PROGRESS -->
+        
+        <!-- FOOTER COPYRIGHTS -->
+        <div class="col-sm-6 lj-footer-copyrights">
+          <p>&copy; All rights reserved. Borderless 2016. non nobis solum, sed omnibus.</p>
+        </div>
+        <!-- /FOOTER COPYRIGHTS -->
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- /FOOTER -->
+  
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Flat Surface Shader -->
+  <script src="js/fss.js"></script>
+  <script src="js/fss-settings.js"></script>
+  <!-- Masonry -->
+  <script src="js/masonry.min.js"></script>
+  <!-- Magnific Popup -->
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <!-- jQuery Easings -->
+  <script src="js/jquery.easing.1.3.js"></script>
+  <!-- Retinadisplay -->
+  <script src="js/retinadisplay.js"></script>
+  <!-- Velocity js -->
+  <script src="js/velocity.min.js"></script>
+  <!-- Lettering -->
+  <script src="js/jquery.lettering.js"></script>
+  <!-- Textillate -->
+  <script src="js/jquery.textillate.js"></script>
+  <!-- Coffee Break js scripts -->
+  <script src="js/lj-coffee-break.js"></script>
+  </body>
+</html>
