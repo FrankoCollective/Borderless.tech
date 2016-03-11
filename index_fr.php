@@ -6,14 +6,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<meta name="keywords" content="borderless, borderless.tech, expanse, franko, Blockchain, governance">
-    <meta name="description" content="Borderless.tech is a coalition of globally accessible governance services forged out of smart contracts that live on the Expanse blockchain.">
+	<meta name="keywords" content="borderless, borderless.tech, expanse, franko, einstein, hawking, Blockchain, gouvernance, democratie">
+    <meta name="description" content="Borderless.tech est une cohalition de services de gouvernance mondialement accessibles, bâtis sur des contrats intelligents hébergés sur la blockchain Expanse.">
 
     <meta property="og:url" content="http://www.borderless.tech/" />
-    <meta property="og:description" content="Borderless.tech is a coalition of globally accessible governance services forged out of smart contracts that live on the Expanse blockchain." />
+    <meta property="og:description" content="Borderless.tech est une cohalition de services de gouvernance mondialement accessibles, bâtis sur des contrats intelligents hébergés sur la blockchain Expanse." />
     <meta property="og:title" content="Borderless.tech" />
     <meta property="og:image" content="http://www.borderless.tech/img/android-icon-192x192.png" />
-    <title>Borderless Technology - Governance for a borderless society.</title>
+    <title>Technologie Borderless - Gouvernance pour une société sans frontières.</title>
 	
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.png">
@@ -62,7 +62,7 @@
 
     <!-- NAVIGATION -->
     <nav>
-      <a href="#home" class="active"><i class="fa fa-bookmark"></i><span>Home</span></a>
+      <a href="#home" class="active"><i class="fa fa-bookmark"></i><span>Accueil</span></a>
       <a href="#services"><i class="fa fa-diamond"></i><span>Services</span></a>
       <a href="#team"><i class="fa fa-users"></i><span>Team</span></a>
 	  <a href="#resources"><i class="fa fa-star"></i><span>Resources</span></a>
@@ -119,7 +119,7 @@
           <!-- TEXT PARAGRAPH -->
           <div class="row">
             <div class="col-xs-12 lj-title-paragraph">
-              <p>Borderless.tech is a coalition of globally accessible governance services forged out of smart contracts that live on the <a href="http://www.expanse.tech">Expanse blockchain</a>.</p>
+              <p>Borderless.tech est une cohalition de services de gouvernance mondialement accessibles, bâtis sur des contrats intelligents hébergés sur la <a href="http://www.expanse.tech">blockchain Expanse</a>.</p>
 			  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/YFzA7w7FScc" frameborder="0" allowfullscreen></iframe></p>
             </div>
           </div>
@@ -138,66 +138,66 @@
               <!-- /TITLE -->
 
               <!-- TEXT PARAGRAPH -->
-              <p>Governance services for a borderless society.</p>
+              <p>Services de gouvernance pour une société sans frontières</p>
               <!-- TEXT PARAGRAPH -->
 
               <!-- FEATURES LIST -->
               <ul>
                 <li>
-                  <span>Borderless Citizenship Id</span>
-                  <p>In a world unrestricted by imaginary lines, we would need a new type of identity. A borderless identity. This identity will serve as the foundation in which all of the other services are built from. </p>
+                  <span>Identité Citoyenne sans frontières</span>
+                  <p>•	Dans un monde libéré de frontières imaginaires, nous aurions besoin d'un nouveau type d'identité. Une identité borderless ("sans frontières"). Cette identité servira de fondation à laquelle tous les autres services se rattachent. </p>
                 </li>
 				<li>
-                  <span>Borderless Direct Democracy</span>
-                  <p>We are creating a <a href="#">3 divisioned direct democracy</a>, where every citizen has a say in the future of the organization. The more citizens participate the more influence and power that citizen has.</p>
+                  <span>Démocratie Directe sans frontières</span>
+                  <p>Nous créons une <a href="#">démocratie directe à 3 voies</a>, ou chaque citoyen a son mot à dire concernant le futur de cette structure. </p>
                 </li>
 			  </ul>
 			  
-			  <p>Legal Services</p>
+			  <p>Services Juridiques</p>
 			  <ul>
 				<li>
-					<span>Borderless Marriage</span>
-					<p>A marriage as defined by the marriage smart contract is a binding relationship between two or more identities.</p>
+					<span>Mariage sans frontières</span>
+					<p>Un mariage tel que définit par les contrats intelligents Borderless Marriages est une relation de liaison entre deux ou plusieurs entités.</p>
 				</li>
 				<li>
-					<span>Borderless Notary</span>
-					<p>Using cryptography we can sign your documents in such a way that proves they exist.</p>
+					<span>Notariat sans frontières</span>
+					<p>En utilisant la cryptographie vos documents peuvent être signés de manière à ce que leur existence soit prouvée.</p>
 				</li>
 				<li>
-					<span>Borderless Property Registrar</span>
-					<p>We will provide multiple services to register the stuff you own on the blockchain. This will also make it easier to transact registered property.</p>
+					<span>Greffier sans frontières</span>
+					<p>Nous mettons à disposition de multiples services pour inscrire ce que vous possédez sur la blockchain. Cette immatriculation des propriétés facilite leur transaction.</p>
 				</li>
 				<li>
-					<span>Borderless Incorporation</span>
-					<p>Register your corporation and build its corporate bylaws in code.</p>
+					<span>Sociétés sans frontières</span>
+					<p>Inscrivez votre société et construisez le dépôt de ses statuts au sein du code.</p>
 				</li>
 			  </ul>
 			
-			<p>Economic Services.</p>
+			<p>Services Economiques.</p>
 			  <ul>
 				<li>
-                  <span>Borderless Basic Income</span>
-                  <p>The only way to guarantee a society is truly voluntary is to have ones basic needs met completely. All citizens should have access to Housing, Nutrition, Healthcare, Education and Protection from Aggression.</p>
+                  <span>Revenu de Base sans frontières</span>
+                  <p>Le seul moyen de s'assurer qu'une société est vraiment volontaire est de subvenir complètement à ses besoins de base. Tous les citoyens devraient avoir accès au logement, à la nourriture, la santé, l'éducation, et la protection contre l'agression. </p>
                 </li>
                 <li>
-                  <span>Borderless Financial Services</span>
-                  <p>In order for a society to be borderless they need to be able to transact freely with out restriction. The Expanse platform is built to do exactly that.</p>
+                  <span>Services Financiers sans frontières</span>
+                  <p>Pour qu'une société soit sans frontières il faut qu'elle puisse échanger librement sans restriction. La plateforme Expanse est construite exactement pour cela.</p>
                 </li>
 				<li>
-                  <span>Borderless Reputation System</span>
-                  <p>A decentralized web of trust system is essential to a borderless society. In order for citizens to transact with confidence we can incentivize good behaviour and punish bad ones.</p>
+                  <span>Système de Réputation sans frontières</span>
+                  <p>Un web décentralisé fait de systèmes fiables est essentiel pour une société sans frontières. Afin de permettre aux citoyens d'échanger en toute confiance, nous pouvons encourager les bons comportements et punir les mauvais usages.</p>
                 </li>
 				<li>
-                  <span>Borderless Escrow</span>
-                  <p>In order to facilitate safe transactions between two parties we will offer an escrow services that are tied to the reputation system.</p>
+                  <span>Entiercement sans frontières</span>
+                  <p>Afin de faciliter les transactions sûres entre deux parties nous mettrons à disposition un service d'entiercement qui sera lié au système de réputation.</p>
                 </li>
               </ul>
 			  
-			  <p>More</p>
+			  <p>Plus</p>
 			  <ul>
 				<li>
-					<span>Misc Smart Contracts</span>
-					<p>Citizens will be able to create, deploy and share their own smart contracts with ease using intuitive tools and templates.</p>
+					<span>Contrats Intelligents divers</span>
+					<p>Les citoyens pourront créer, déployer et partager leurs propres contrats intelligents avec facilité grâce à des outils intuitifs et des modèles.</p>
 				</li>
 			  </ul>
               <!-- /FEATURES LIST -->
@@ -215,11 +215,11 @@
 
               <!-- TITLE -->
               <h2>Team</h2> 
-			  <p> <a href="http://slack.expanse.tech"><i class="fa fa-star"></i> Join our team</a></p>
+			  <p> <a href="http://slack.expanse.tech"><i class="fa fa-star"></i> Rejoignez notre équipe</a></p>
               <!-- /TITLE -->
 
               <!-- TEXT PARAGRAPH -->
-              <p>In a jungle of concrete somewhere in America, raw men work hard doing one of the world’s most dangerous jobs – creating borderless governance services. This extremely arduous but satisfying effort is driven by passion and the will to help move our planet forward. Against all odds, brave men risk their lives to craft a beautiful future for everyone.</p>
+              <p>Dans une jungle de béton quelque part en Amérique, des pionniers travaillent durs à l'un des plus dangereux métiers du monde - créer des services de gouvernance sans frontières. Ce titanesque effort reste satisfaisant car il est guidé par la passion et l'envie d'aider à faire avancer la planète. Contre toute attente, de braves hommes risquent leur vie pour créer un magnifique futur pour tous.</p>
               <!-- /TEXT PARAGRAPH -->
 			  
 
@@ -318,9 +318,9 @@
               <!-- /TITLE -->
 
               <!-- TEXT PARAGRAPH -->
-              <p>Research Papers</p>
+              <p>Documents de recherche</p>
 			  <ul>
-				<li><a href="https://docs.google.com/document/d/1ITNRmZ0dTse-aZqjbWiC9w1n2XpPvKyl4J9BP-liuxw/edit?usp=sharing">Ternary Division DAO</a></li>
+				<li><a href="https://docs.google.com/document/d/1ITNRmZ0dTse-aZqjbWiC9w1n2XpPvKyl4J9BP-liuxw/edit?usp=sharing">DAO à division ternaire</a></li>
 				<li><a href="https://docs.google.com/document/d/1cbuqW5Tl6URMRU48hLNCvPhAU52ceqU0n7kRoft6Vic/edit?usp=sharing">EXP.life</a></li>
 			  </ul>
               <!-- /TEXT PARAGRAPH -->
@@ -342,19 +342,19 @@
               <!-- /TITLE -->
 
               <!-- TEXT PARAGRAPH -->
-              <p>Don’t hesitate to ask, we are here to help you!</p>
+              <p>N'hésitez pas à demander, nous sommes là pour vous aider!</p>
               <!-- /TEXT PARAGRAPH -->
 
               <!-- CONTACT FORM -->
               <form autocomplete="off">
-                <label for="contact-name">Name<span class="verification"></span></label>
+                <label for="contact-name">Nom<span class="verification"></span></label>
                 <input type="text" value="" name="contact-name" id="contact-name">
                 <label for="contact-email">Email<span class="verification"></span></label>
                 <input type="text" value="" name="contact-email" id="contact-email">
                 <label for="contact-message">Message<span class="verification"></span></label>
                 <textarea name="contact-message" id="contact-message"></textarea>
-                <button type="submit" name="contact-submit">Submit</button>
-                <span class="contact-message">Submit successful, thanks!</span>
+                <button type="submit" name="contact-submit">Envoyer</button>
+                <span class="contact-message">Envoi réussi, merci!</span>
               </form>
               <!-- /CONTACT FORM -->
 
@@ -392,7 +392,7 @@
         
         <!-- FOOTER COPYRIGHTS -->
         <div class="col-sm-6 lj-footer-copyrights">
-          <p>&copy; All rights reserved. Borderless 2016. non nobis solum, sed omnibus.</p>
+          <p>&copy; Tous droits réservés. Borderless 2016. non nobis solum, sed omnibus.</p>
         </div>
         <!-- /FOOTER COPYRIGHTS -->
 
