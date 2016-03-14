@@ -4,7 +4,7 @@ contract Founders {
 	
 	address owner;
 	uint interval = 43800; //payment interval a months worth of blocks
-	uint divisor = 100; //pays out 1%
+	uint divisor = 1000; //pays out 10%
 	uint lastPayed;
 	uint pay;
 	

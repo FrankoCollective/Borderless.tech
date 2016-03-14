@@ -6,7 +6,7 @@ contract Timelock{
 
 	address public owner;
 	uint public unlockBlock;
-	uint day = 46200;
+	uint day = 1440;
 	
 	function Timelock(int _numDays){
 		owner = msg.sender;
