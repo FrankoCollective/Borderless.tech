@@ -7,6 +7,8 @@ contract ReserveTimelock {
 	address public owner;
 	uint public unlockBlock;
 	
+	event Redeem(address _sendto);
+	
 	struct Admin{
 		bool exists;
 	}
@@ -24,6 +26,7 @@ contract ReserveTimelock {
 	function kill(address _sendto){
 		if(admins[msg.sender].exists == true || msg.sender == owner && block.number > unlockBlock){
 			suicide(_sendto);
+			Redeem(_sendto)
 		}
 	}
 

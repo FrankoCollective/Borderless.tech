@@ -1,11 +1,17 @@
 // The Borderless Reserve
 // This contract stores the balances for multiple assets from other cryptocurrencies to gold, silver, stocks, bonds.
-// TODO: Add events
 // TODO: Separate data storage from logic
 // TODO: make sure every amount is converted into wie
 import "owned";
 
 contract BorderlessReserve {
+
+	//events
+		event eSend(address indexed _to, address indexed _from, bytes32 indexed _asset, uint _amt);
+		event eRedeem(uint indexed _amount, bytes32 indexed _asset, bytes32 indexed _redeemer);
+		event eMint(uint _amount, bytes32 indexed _asset, bytes32 indexed _txid, address indexed _minter);
+		event eAdmin(address indexed _admin, bytes32 indexed _action);
+	
 
 	address public owner;
 	
@@ -51,12 +57,6 @@ contract BorderlessReserve {
 		accounts[owner].isAdmin = true;
 		accounts[owner].isOwner = true;
 		
-		accounts[0x6c226e4f66175e686a90d29aef34685a69c5ffb3].isAdmin = true;
-		accounts[0x5347bc99afef527ddf510bbd72196ba0d2d99299].isAdmin = true;
-		accounts[0x8027fefb015c10d2235d226686fdd2a1c810992e].isAdmin = true;
-		accounts[0x1755dd848b5702998de0b5945afc111a09e1e071].isAdmin = true;
-		accounts[0x133ff45f66ddf46d1d3c9e8613b9b8002b46fbad].isAdmin = true;
-		
 		addNewAsset('frk', 'franko', 100);
 		addNewAsset('btc', 'bitcoin', 100);
 		addNewAsset('eth', 'ethereum', 100);
@@ -76,6 +76,7 @@ contract BorderlessReserve {
 	    if(accounts[msg.sender].balances[_asset] >= _amount){
 	        accounts[msg.sender].balances[_asset]-= _amount;
 	        accounts[_to].balances[_asset]+= _amount;
+			eSend(_to, msg.sender, _asset, _amount);
 	    }
 	    
 	}
@@ -94,6 +95,7 @@ contract BorderlessReserve {
 			assets[_asset].RedeemHistory[rIndex].timestamp = block.timestamp;
 			assets[_asset].RedeemHistory[rIndex].amount = amount;
 			assets[_asset].RedeemHistory[rIndex].redeemer = _redeemer;
+			eRedeem(_amount, _asset, _redeemer);
 	    }
 	}
 	
@@ -114,6 +116,8 @@ contract BorderlessReserve {
 			assets[_asset].MintHistory[mIndex].amount = amount;
 			assets[_asset].MintHistory[mIndex].txid = _txid;
 			assets[_asset].MintHistory[mIndex].minter = _minter;
+			
+			eMint(_amount, _asset, _txid, _minter);
 		}
 	}
 	
@@ -123,29 +127,36 @@ contract BorderlessReserve {
 	       assets[_asset].name = _name;
 	       assets[_asset].fee = _fee;
 	       assets[_asset].rIndex = 0;
+		   
+		   eAdmin(msg.sender, 'NewAsset');
 	}
 	
 	function setAssetFee(bytes32 _asset, uint _fee) isAdmin() {
 	       assets[_asset].fee = _fee;
+		   eAdmin(msg.sender, 'SetAssetFee');
 	}
 	
     function setAssetName(bytes32 _asset, bytes32 _name) isAdmin() {
 	       assets[_asset].name = _name;
+		   eAdmin(msg.sender, 'SetAssetName');
 	}
 	
 	function setAdmin(address _account, bool _action) isOwner() {
 		accounts[_account].isAdmin = _action;
+		eAdmin(msg.sender, 'SetAdmin');
 	}
 	
 	function setOwner(address _account, bool _action) isOwner() {
 		if(_account != owner){
 		accounts[_account].isOwner = _action;
+		eAdmin(msg.sender, 'SetOwner');
 		}		
 	}
 
 	function empty() isAdmin() {
          uint256 balance = this.balance;
          owner.send(balance);
+		 eAdmin(msg.sender, 'Emptied');
     }
 	
 }                          

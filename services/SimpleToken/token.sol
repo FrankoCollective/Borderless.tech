@@ -5,6 +5,8 @@ import "owned";
 
 contract Token {
 
+
+	event sent(address indexed _from, address indexed _to, address _amount);
 	address public owner;
 
 	
@@ -28,9 +30,9 @@ contract Token {
 		if(accounts[msg.sender] >= _amount){
 
 			accounts[msg.sender]-=_amount;
-
 			accounts[msg.sender]+=_amount;
-
+			sent(msg.sender, _to, _amount);
+			
 		return true;
 
 		}
