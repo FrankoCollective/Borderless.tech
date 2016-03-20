@@ -2,9 +2,11 @@ import "owned";
 
 contract Founders {
 	
+	event ePayFounders(uint block, uint amount);
+	
 	address owner;
 	uint interval = 43800; //payment interval a months worth of blocks
-	uint divisor = 1000; //pays out 10%
+	uint divisor = 10; //pays out 10%
 	uint lastPayed;
 	uint pay;
 	
@@ -45,6 +47,8 @@ contract Founders {
 			
 			//update lastPayed
 			lastPayed = block.number;
+			
+			ePayFounders(lastPayed, pay);
 		}
 	}
 	
