@@ -480,6 +480,88 @@
 	}
 
 
+.team_pic {
+	margin: auto;
+	padding-top: 43px;
+	background-color: #fff;
+	border-radius: 50% !important;
+	height: 110px;
+	width: 110px;	
+	background-repeat: no-repeat!important;
+    background-position: center !important;
+    background-size: cover !important;
+	
+}
+
+
+
+
+.tm01 {
+	background-image: url(images/tp_01.jpg) !important;	
+}
+.tm02 {
+	background-image: url(images/tp_02.jpg) !important;	
+}
+.tm03 {
+	background-image: url(images/tp_03.jpg) !important;	
+}
+.tm04 {
+	background-image: url(images/tp_04.jpg) !important;	
+}
+.tm05 {
+	background-image: url(images/tp_05.jpg) !important;	
+}
+.tm06 {
+	background-image: url(images/tp_06.jpg) !important;	
+}
+.tm07 {
+	background-image: url(images/tp_07.jpg) !important;	
+}
+.tm08 {
+	background-image: url(images/tp_08.jpg) !important;	
+}
+
+
+
+.title_text {
+	text-align: center;
+	padding-top: 5px;
+	text-transform: uppercase;
+    color: #000 !important;
+	margin-top: 5px;
+	
+}
+
+.video_btn {
+	background-color: #fff;
+	color: #06a5ff;
+	text-align: center;
+	padding: 15px;
+	text-transform: uppercase;
+}
+
+.team_text {
+	min-height: 360px;	
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.name_text {
+	text-align: center;
+	padding-top: 20px;
+	text-transform: uppercase;
+    font-weight: 200 !important;
+	font-size: 23px;
+	
+}
+
+.team_section {
+	padding-top: 40px;
+}
+
+
+
+
 /* 13. CONTACT */
 
 	#contact form {
@@ -642,6 +724,15 @@
 	}
 
 	@media (max-width: 767px) {
+		
+		
+		.team_text {
+	text-align: center;
+}
+		
+		.logo {
+			margin: auto;
+		}
 
 		p {
 			font-size: 1.2em;
