@@ -1,0 +1,189 @@
+/* Large desktop :1920px. */
+@media (min-width: 1920px) and (max-width: 1920px) {
+    .container {width: 1230px}
+    .banner-content h2 {
+        font-size: 74px;
+        line-height: 72px;
+        margin-bottom: 0;
+    }
+    .banner-content h3 {
+        font-size: 109px;
+        line-height: 100px;
+        margin-bottom: 10px;
+    }
+    .banner-content .banner-button {margin-top: 18px}
+    .app-image {margin-top: -210px}
+    .slider-area.solid-color, #slider .video-wrapper {height: 700px}
+    .layout-two-slider.slider-area.solid-color, #slider.layout-two-video .video-banner {
+        height: 865px
+    }
+        .layout-two-slider .banner-content h1, #slider.layout-two-video .video-banner .banner-content h1 {
+        font-size: 41px;
+        margin-bottom: 23px;
+    }
+    .layout-two-slider .banner-content h2, #slider.layout-two-video .video-banner .banner-content h2 {
+        font-size: 88px;
+        line-height: 64px;
+        margin-bottom: 26px;
+    }
+    .layout-two-slider .banner-content h3, #slider.layout-two-video .video-banner .banner-content h3 {
+        font-size: 85px;
+        margin-bottom: 21px;
+    }
+    .layout-two-slider .banner-content .banner-button, #slider.layout-two-video .video-banner .banner-content .banner-button {
+        margin-top: 33px;
+    }
+}
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+    .container {width:970px}
+    .main-menu nav ul li a {
+        padding: 18px 8px;
+    }
+    .banner-content h2 {
+        font-size: 50px;
+        line-height: 42px;
+        margin-bottom: 0;
+    }
+    .banner-content h3 {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 0;
+    }
+    .app-image {
+        margin-top: 0;
+        padding-left: 0;
+    }
+    .single-feature > span {margin-right: 8px}
+    .service-border {padding: 22px 15px 39px}
+    .video-wrapper {height: 450px}
+    .feature-app {margin-bottom: 60px}
+}
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {width:750px}
+    .mobile-menu .mean-bar {
+        background: rgba(0, 0, 0, 0) url("../img/logo/navlogo.png") no-repeat scroll left top;
+        padding: 10px 0 0;
+    }
+    #main-menu {
+        background: #009fdd none repeat scroll 0 0;
+        padding: 15px 0;
+        position: static;
+        top: 0;
+    }
+    .banner-content .text-content {
+        top: 15%;
+    }
+    .banner-content h2, .layout-two-slider .banner-content h2, #slider.layout-two-video .video-banner .banner-content h2 {
+        font-size: 50px;
+        line-height: 42px;
+        margin-bottom: 0;
+    }
+    .banner-content h3 {
+        font-size: 57px;
+        line-height: 63px;
+        margin-bottom: 0;
+    }
+    .banner-content .banner-button {margin-top: 8px}
+    .service-border {padding: 22px 15px 39px}
+    .video-wrapper {height: 400px}
+    #contact .form-group.col-md-12 {padding: 0}
+    .testimonial-image-slider {margin: 0 80px}
+    .slider-area.solid-color.layout-two-slider, #slider.layout-two-video .video-banner {height: 410px}
+    .pricing-area {padding-top: 85px}
+    .slider-area.solid-color, #slider .video-banner {height: 337px;}
+    .slider-area.layout-two-slider .banner-content .text-content {top: 14%}
+    .slider-area.layout-two-slider .banner-content h2, .layout-two-slider .banner-content h2, #slider.layout-two-video .video-banner .banner-content h2 {
+        margin-bottom: 15px
+    }
+    .preview-2 .nivo-directionNav a {margin-top: -55.5px}
+    .layout-two-slider .banner-content .text-content, #slider.layout-two-video .video-banner .text-content {
+        top: 19%;
+    }
+}
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .container {width:300px}
+    .mobile-menu .mean-bar {
+        background: rgba(0, 0, 0, 0) url("../img/logo/navlogo.png") no-repeat scroll left top;
+        padding: 10px 0 0;
+    }
+    #main-menu {
+        background: #009fdd none repeat scroll 0 0;
+        padding: 10px 0;
+        position: static;
+        top: 0;
+    }
+    .banner-content .text-content {
+        top: 15%;
+    }
+    .banner-content h2, .layout-two-slider .banner-content h2, #slider.layout-two-video .video-banner .banner-content h2 {
+        font-size: 26px;
+        line-height: 26px;
+        margin-bottom: 0;
+        font-family: 'montserratbold';
+    }
+    .banner-content .banner-button, .layout-two-slider .banner-content .banner-button, #slider.layout-two-video .video-banner .banner-content .banner-button {
+        margin-top: 10px;
+    }
+    .banner-content .banner-button a {
+        line-height: 36px;
+        padding: 0 20px;
+    }
+    .single-feature, .single-features-list, .features-list {text-align: center}
+    .single-feature > span, .feature-list-img {
+        display: block;
+        float: none;
+        margin: 15px auto;
+        text-align: center;
+    }
+    .feature-text {margin-bottom: 20px}
+    .single-service {width: 100%}
+    .nivo-directionNav, .service-area .single-service .service-border::before, .service-area .single-service .service-border::after, .feature-list-carousel.owl-theme .owl-controls .owl-page {
+        display: none
+    }
+    .video-wrapper {height: 170px}
+    .video-text h1 {
+        font-size: 27px;
+        margin-top: 12px;
+    }
+    .download-buttons .button:first-child {margin-bottom: 15px}
+    .section-title > h1 {font-size: 32px}
+    .contact-area .section-title > p {
+        margin-bottom: 16px;
+        padding-right: 0;
+    }
+        #contact .form-group.col-md-12 {padding: 0}
+    .single-price-package {
+        margin-bottom: 20px;
+        margin-top: 0 !important;
+    }
+    #main-menu {
+        background: #009fdd none repeat scroll 0 0;
+        position: static;
+    }
+    .clients-area {padding-top: 20px}
+    .contact-address span.icon-img {margin-right: 7px}
+    .slider-area.solid-color, #slider .video-banner {height: 120px;}
+    .slider-area.solid-color.layout-two-slider, #slider.layout-two-video .video-banner {
+        height: 148px;
+    }
+}
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .container {width:450px}
+    .blog-image > a, .blog-image > a img {
+        width: 100%
+    }
+    .banner-content h2, .layout-two-slider .banner-content h2, #slider.layout-two-video .video-banner .banner-content h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .slider-area.solid-color, #slider .video-banner {height: 230px;}
+    .slick-prev {left: -20px}
+    .slick-next {right: -20px}
+    .slider-area.solid-color.layout-two-slider, #slider.layout-two-video .video-banner {
+        height: 278px;
+    }
+}
